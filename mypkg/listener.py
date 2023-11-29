@@ -6,7 +6,7 @@ def main():
     rclpy.init()
     node = Node("listener")
     client = node.create_client(Query, 'query')
-    while not client.wait_for_servise(timeout_sec=1.0):
+    while not client.wait_for_service(timeout_sec=1.0):
         node.get_logger().info('待機中')
 
     req = Query.Request()
@@ -21,12 +21,12 @@ def main():
             except:
                 node.get_logger().info('呼び出し失敗')
             else:
-                nodee.get_logger().info("age: {}".format(response.age))
+                node.get_logger().info("age: {}".format(response.age))
 
             break
-
+ 
     node.destroy_node()
     rclpy.shutdown()
-
-if __name__ = '__main__':
-    main()
+ 
+if __name__ == '__main__':
+     main()
