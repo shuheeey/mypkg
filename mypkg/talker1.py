@@ -3,7 +3,6 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Int16
-import random
 
 rclpy.init()
 node = Node("talker")
