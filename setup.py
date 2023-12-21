@@ -26,6 +26,7 @@ setup(
             'listener = mypkg.listener:main',
             'talker1 = mypkg.talker1:main',
             'listener1 = mypkg.listener1:main',
+            'listener2 = mypkg.listener2:main',
         ],
     },
 )

@@ -6,15 +6,20 @@ from std_msgs.msg import Int16
 
 def cb(msg):
     global sum
-    sum += msg.data
-    node.get_logger().info("Sum: %d" % sum)
+    global flag
+    if flag:
+        sum += msg.data
+        node.get_logger().info("Sum: %d" % sum)
+    flag = not flag
 
 def main():
     global node
     global sum
+    global flag
     rclpy.init()
     node = Node("listener")
     sum = 0
+    flag = True
     sub = node.create_subscription(Int16, "countup", cb, 10)
     rclpy.spin(node)
 
