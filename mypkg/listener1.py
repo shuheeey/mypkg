@@ -5,10 +5,19 @@ from rclpy.node import Node
 from std_msgs.msg import Int16
 
 def cb(msg):
-    global node
-    node.get_logger().info("Listen: %d" % msg.data)
+    global sum
+    sum += msg.data
+    node.get_logger().info("Sum: %d" % sum)
 
-rclpy.init()
-node = Node("listener")
-pub = node.create_subscription(Int16, "countup", cb, 10)
-rclpy.spin(node)
+def main():
+    global node
+    global sum
+    rclpy.init()
+    node = Node("listener")
+    sum = 0
+    sub = node.create_subscription(Int16, "countup", cb, 10)
+    rclpy.spin(node)
+
+if __name__ == '__main__':
+    main()
+
