@@ -15,7 +15,7 @@ class Talker():
         msg.data = self.n
         self.pub.publish(msg)
         self.n += 1
-        if self.n == 30:
+        if self.n == 121:
             rclpy.shutdown()
 
 def main():
