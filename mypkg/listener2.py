@@ -3,12 +3,16 @@ from rclpy.node import Node
 from std_msgs.msg import Int16
 
 def cb(msg):
-    node.get_logger().info("今回%d足されました" % msg.data)
+    global node
+    if msg.data % 20 == 0:
+        node.get_logger().info("Count: %d" % (msg.data // 2))
+
+
 
 def main():
     global node
     rclpy.init()
-    node = Node("listener")
+    node = Node("listener2")
     sub = node.create_subscription(Int16, "countup", cb, 10)
     rclpy.spin(node)
 
