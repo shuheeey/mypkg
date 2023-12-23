@@ -5,7 +5,7 @@ from std_msgs.msg import Int16
 def cb(msg):
     global node
     if msg.data % 20 == 0:
-        node.get_logger().info("Count: %d" % (msg.data // 2))
+        node.get_logger().info("Count: %d sec elapsed" % (msg.data // 2))
 
 
 
