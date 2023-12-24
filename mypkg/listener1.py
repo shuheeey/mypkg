@@ -18,6 +18,8 @@ def cb(msg):
     node.get_logger().info("Sum: %d" % sum)
     if is_prime(sum):
         node.get_logger().info("%d は素数！" % sum)
+    if is_prime(msg.data):
+        node.get_logger().info("plus %d は素数！" % msg.data)
 
 def main():
     global node
