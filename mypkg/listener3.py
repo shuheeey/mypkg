@@ -8,7 +8,7 @@ def cb(msg):
     if msg.data == 0:
         node.get_logger().info("START")
     if input() == "":
-        print(msg.data)
+        node.get_logger().info("%d 秒！" % msg.data)
         rclpy.shutdown()
 
 
