@@ -11,14 +11,21 @@ class Talker():
         node.create_timer(0.5, self.cb)
 
     def cb(self):
+        global node
         msg = Int16()
         msg.data = self.n
         self.pub.publish(msg)
+        if self.n == 0:
+            #print("送信中")
+            node.get_logger().info("送信中")
         self.n += 1
         if self.n == 121:
+            #print("終了")
+            node.get_logger().info("終了")
             rclpy.shutdown()
 
 def main():
+    global node
     rclpy.init()
     node = Node("talker")
     talker = Talker(node)
