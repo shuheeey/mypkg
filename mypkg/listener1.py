@@ -17,15 +17,15 @@ def cb(msg):
     sum += msg.data
     node.get_logger().info("Sum: %d" % sum)
     if is_prime(sum):
-        node.get_logger().info("%d は素数！" % sum)
+        node.get_logger().info("Sum: %d は素数！" % sum)
     if is_prime(msg.data):
-        node.get_logger().info("plus %d は素数！" % msg.data)
+        node.get_logger().info("↑素数足された( + %d )↑" % msg.data)
 
 def main():
     global node
     global sum
     rclpy.init()
-    node = Node("listener")
+    node = Node("listener1")
     sum = 0
     sub = node.create_subscription(Int16, "countup", cb, 10)
     rclpy.spin(node)

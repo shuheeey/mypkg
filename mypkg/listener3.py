@@ -6,10 +6,12 @@ import time
 def cb(msg):
     global node
     if msg.data == 0:
-        node.get_logger().info("START")
-    if input() == "":
-        node.get_logger().info("%d 秒！" % msg.data)
-        rclpy.shutdown()
+        node.get_logger().info("     S T A R T     ")
+    #if input() == "":
+        #node.get_logger().info("%d 秒！" % msg.data)
+        #rclpy.shutdown()
+    if msg.data == 120:
+        node.get_logger().info("    F I N I S H    ")
 
 
 
