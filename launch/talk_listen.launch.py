@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2023 Shuhei Yanaighori shuheidaigaku22@gmail.com
+# SPDX-License-Identifier: BSB-3-Clause
+
 import launch
 import launch.actions
 import launch.substitutions
