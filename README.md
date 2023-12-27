@@ -1,10 +1,10 @@
 # mypkg
-ロボットシステム学課題２提出用リポジトリ。
+ロボットシステム学課題２提出用リポジトリ
 
 [![test](https://github.com/shuheeey/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/shuheeey/mypkg/actions/workflows/test.yml)[![test](https://github.com/shuheeey/mypkg/actions/workflows/test1.yml/badge.svg)](https://github.com/shuheeey/mypkg/actions/workflows/test1.yml)
 
 # インストール方法
-ROS2を動かすことのできる環境でこのリポジトリをクローンする。
+ROS2を動かすことのできる環境でこのリポジトリをクローンする
 
 ```bash
 git clone https://github.com/shuheeey/mypkg.git
@@ -13,12 +13,12 @@ git clone https://github.com/shuheeey/mypkg.git
 # ノード
 
 ## トピックの説明
-トピック/countupは、0.5秒ごとに0から1ずつ数字を増やしていく。
+トピック/countupは、0.5秒ごとに0から1ずつ数字を増やしていく
 
 ## talker
-* パブリッシャーを持つノードである。
-* トピック/countupを通じてメッセージを送信する。
-* メッセージの型はInt16。
+* パブリッシャーを持つノードである
+* トピック/countupを通じてメッセージを送信する
+* メッセージの型はInt16
 
 ### 実行方法
 
@@ -33,8 +33,8 @@ $ ros2 run mypkg talker
 ```
 
 ## listener
-* サブスクライバーを持つノードである。
-* トピック/countupを通じてメッセージを受け取り、そのまま出力する。
+* サブスクライバーを持つノードである
+* トピック/countupを通じてメッセージを受け取り、そのまま出力する
 
 ### 実行方法
 
@@ -61,10 +61,10 @@ $ ros2 run mypkg listener
 ```
 
 ## talker1
-* パブリッシャーをもつノードである。
-* トピック/countupを通じてメッセージを送信する。
-* メッセージの型はInt16。
-* 60秒間メッセージを送信する。メッセージを送っている間は"送信中"と表示され、60秒たったら"終了"と表示される。
+* パブリッシャーをもつノードである
+* トピック/countupを通じてメッセージを送信する
+* メッセージの型はInt16
+* 60秒間メッセージを送信する。メッセージを送っている間は"送信中"と表示され、60秒たったら"終了"と表示される
 
 ### 実行方法
 
@@ -80,9 +80,9 @@ $ ros2 run mypkg talker1
 ```
 
 ## listener1
-* サブスクライバーを持つノードである。
-* トピック/countupを通じて受け取ったメッセージを足し合わせていき出力する。
-* 足し合わせた合計値が素数であれば、素数であると表示する。さらに受け取ったメッセージの値が素数であるときも、素数であると表示する。
+* サブスクライバーを持つノードである
+* トピック/countupを通じて受け取ったメッセージを足し合わせていき出力する
+* 足し合わせた合計値が素数であれば、素数であると表示する。さらに受け取ったメッセージの値が素数であるときも、素数であると表示する
 
 ### 実行方法
 
@@ -113,8 +113,8 @@ $ ros2 run mypkg listener1
 ```
 
 ## listener2
-* サブスクライバーを持つノードである。
-* 実行してからの経過時間を10秒刻みで表示する。
+* サブスクライバーを持つノードである
+* 実行してからの経過時間を10秒刻みで表示する
 
 ### 実行方法
 
@@ -133,9 +133,9 @@ $ ros2 run mypkg listener2
 ```
 
 ## listener3
-* サブスクライバーを持つノードである。
-* STARTとFINISHを表示させる。
-* このコードを実行している間に大谷選手はどれだけ稼げて、自分はどれくらいしか稼げないかを計算し10秒毎に出力する。
+* サブスクライバーを持つノードである
+* STARTとFINISHを表示させる
+* このコードを実行している間に大谷選手はどれだけ稼げて、自分はどれくらいしか稼げないかを計算し10秒毎に出力する
 
 ### 実行方法
 
@@ -164,13 +164,84 @@ $ ros2 run mypkg listener3
 ## talkerとlistener
 * talkerとlistenerの２つのノードを１つの端末で同時に実行する
 
+### 実行方法
+
+```bash
+$ ros2 launch mypkg talk_listen.launch.py
+```
+
+### 実行結果
+
+```bash
+[INFO] [launch]: All log files can be found below /home/shu1516/.ros/log/2023-12-28-06-53-15-083173-shuheiiiii-121
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [talker-1]: process started with pid [122]
+[INFO] [listener-2]: process started with pid [124]
+[listener-2] [INFO] [1703713996.052544099] [listener]: Listen: 0
+[listener-2] [INFO] [1703713996.535603296] [listener]: Listen: 1
+[listener-2] [INFO] [1703713997.035790143] [listener]: Listen: 2
+[listener-2] [INFO] [1703713997.535766922] [listener]: Listen: 3
+[listener-2] [INFO] [1703713998.035836956] [listener]: Listen: 4
+[listener-2] [INFO] [1703713998.535762056] [listener]: Listen: 5
+[listener-2] [INFO] [1703713999.035739789] [listener]: Listen: 6
+[listener-2] [INFO] [1703713999.535845518] [listener]: Listen: 7
+[listener-2] [INFO] [1703714000.035771971] [listener]: Listen: 8
+[listener-2] [INFO] [1703714000.535930382] [listener]: Listen: 9
+[listener-2] [INFO] [1703714001.035772008] [listener]: Listen: 10
+```
 
 ## talker1とlistener1, listener2, listener3
 * talker1とlistener1, listener2, listener3の４つのノードを１つの端末で同時に実行する
 
+### 実行方法
+
+```bash
+$ ros2 launch mypkg talk_lis3.launch.py
+```
+
+### 実行結果
+
+```bash
+[listener3-4] [INFO] [1703714076.766969655] [listener3]:      S T A R T
+[listener3-4] [INFO] [1703714076.767345571] [listener3]: 大谷の給料と俺の給料計算
+[talker1-1] [INFO] [1703714076.773734615] [talker]: 送信中
+[listener1-2] [INFO] [1703714076.773732193] [listener1]: Sum: 0
+[listener2-3] [INFO] [1703714076.781095330] [listener2]: --- Count every 10 sec ---
+[listener1-2] [INFO] [1703714077.260038551] [listener1]: Sum: 1
+[listener1-2] [INFO] [1703714077.759547821] [listener1]: Sum: 3
+[listener1-2] [INFO] [1703714077.759979128] [listener1]: Sum: 3 は素数！
+[listener1-2] [INFO] [1703714077.760320573] [listener1]: ↑素数足された( + 2 )↑
+[listener1-2] [INFO] [1703714078.259352920] [listener1]: Sum: 6
+[listener1-2] [INFO] [1703714078.259994852] [listener1]: ↑素数足された( + 3 )↑
+[listener1-2] [INFO] [1703714078.759737566] [listener1]: Sum: 10
+[listener1-2] [INFO] [1703714079.260006319] [listener1]: Sum: 15
+[listener1-2] [INFO] [1703714079.260639420] [listener1]: ↑素数足された( + 5 )↑
+[listener1-2] [INFO] [1703714079.759328199] [listener1]: Sum: 21
+[listener1-2] [INFO] [1703714080.259697455] [listener1]: Sum: 28
+[listener1-2] [INFO] [1703714080.260254451] [listener1]: ↑素数足された( + 7 )↑
+[listener1-2] [INFO] [1703714080.759495667] [listener1]: Sum: 36
+[listener1-2] [INFO] [1703714081.259416879] [listener1]: Sum: 45
+[listener1-2] [INFO] [1703714081.759380702] [listener1]: Sum: 55
+[listener1-2] [INFO] [1703714082.259694833] [listener1]: Sum: 66
+[listener1-2] [INFO] [1703714082.260313876] [listener1]: ↑素数足された( + 11 )↑
+[listener1-2] [INFO] [1703714082.759311170] [listener1]: Sum: 78
+[listener1-2] [INFO] [1703714083.259827899] [listener1]: Sum: 91
+[listener1-2] [INFO] [1703714083.260425787] [listener1]: ↑素数足された( + 13 )↑
+[listener1-2] [INFO] [1703714083.759764879] [listener1]: Sum: 105
+[listener1-2] [INFO] [1703714084.259464418] [listener1]: Sum: 120
+[listener1-2] [INFO] [1703714084.759364215] [listener1]: Sum: 136
+[listener1-2] [INFO] [1703714085.259721390] [listener1]: Sum: 153
+[listener1-2] [INFO] [1703714085.260308436] [listener1]: ↑素数足された( + 17 )↑
+[listener1-2] [INFO] [1703714085.759205908] [listener1]: Sum: 171
+[listener1-2] [INFO] [1703714086.259434737] [listener1]: Sum: 190
+[listener1-2] [INFO] [1703714086.259841132] [listener1]: ↑素数足された( + 19 )↑
+[listener3-4] [INFO] [1703714086.759594852] [listener3]: 10秒　　　大谷: 65670 円   俺: 3 円   まじか
+[listener2-3] [INFO] [1703714086.759594223] [listener2]: ----- 10 sec elapsed -----
+[listener1-2] [INFO] [1703714086.759694229] [listener1]: Sum: 210
+```
 
 # 必要なソフトウェア
-* ROS2
+* ROS2 humble
 * Python
 
 # テスト環境
@@ -178,6 +249,6 @@ $ ros2 run mypkg listener3
 
 # ライセンス
 * このソフトウェアパッケージは、3条項BSDライセンスの下、再配布および使用が許可されます。
-* このパッケージのコードの一部は、Ryuichi Ueda氏の以下のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）を参考に、本人の許可を得て改変し自身の著作としたものです
+* このパッケージの一部のコードは、Ryuichi Ueda氏の以下のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）を参考に、本人の許可を得て自身の著作としたものです
   * [ryuichiueda/my_slides/robosys_2022](https://github.com/ryuichiueda/my_slides/tree/master/robosys_2022)
 * © 2023 Shuhei Yanagihori
