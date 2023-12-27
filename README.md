@@ -20,8 +20,45 @@ git clone https://github.com/shuheeey/mypkg.git
 * トピック/countupを通じてメッセージを送信する。
 * メッセージの型はInt16。
 
+### 実行方法
+
+```bash
+$ ros2 run mypkg talker
+```
+
+### 実行結果
+
+```bash
+(何も表示されない)
+```
+
 ## listener
-サブスクライバーを持つノードである。トピック/countupを通じてメッセージを受け取り、そのまま出力する。
+* サブスクライバーを持つノードである。
+* トピック/countupを通じてメッセージを受け取り、そのまま出力する。
+
+### 実行方法
+
+端末１でtalkerを動かし、端末２で以下のようにlistenerを動かす
+
+```bash
+$ ros2 run mypkg listener
+```
+
+### 実行結果
+
+```bash
+[INFO] [1703677804.729422151] [listener]: Listen: 0
+[INFO] [1703677805.217397200] [listener]: Listen: 1
+[INFO] [1703677805.717381445] [listener]: Listen: 2
+[INFO] [1703677806.217560241] [listener]: Listen: 3
+[INFO] [1703677806.717461928] [listener]: Listen: 4
+[INFO] [1703677807.217671900] [listener]: Listen: 5
+[INFO] [1703677807.717565586] [listener]: Listen: 6
+[INFO] [1703677808.217695207] [listener]: Listen: 7
+[INFO] [1703677808.717276717] [listener]: Listen: 8
+[INFO] [1703677809.217362977] [listener]: Listen: 9
+[INFO] [1703677809.717622603] [listener]: Listen: 10
+```
 
 ## talker1
 パブリッシャーをもつノードである。トピック/countupを通じてメッセージを送信する。メッセージの型はInt16。60秒間メッセージを送信する。メッセージを送っている間は"送信中"と表示され、60秒たったら"終了"と表示される。
