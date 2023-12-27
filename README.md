@@ -20,7 +20,7 @@ git clone https://github.com/shuheeey/mypkg.git
 * トピック/countupを通じてメッセージを送信する。
 * メッセージの型はInt16。
 
-#### 実行方法
+### 実行方法
 
 ```bash
 $ ros2 run mypkg talker
@@ -61,29 +61,98 @@ $ ros2 run mypkg listener
 ```
 
 ## talker1
-パブリッシャーをもつノードである。トピック/countupを通じてメッセージを送信する。メッセージの型はInt16。60秒間メッセージを送信する。メッセージを送っている間は"送信中"と表示され、60秒たったら"終了"と表示される。
+* パブリッシャーをもつノードである。
+* トピック/countupを通じてメッセージを送信する。
+* メッセージの型はInt16。
+* 60秒間メッセージを送信する。メッセージを送っている間は"送信中"と表示され、60秒たったら"終了"と表示される。
+
+### 実行方法
+
+```bash
+$ ros2 run mypkg talker1
+```
+
+### 実行結果
+
+```bash
+
+```
 
 ## listener1
-サブスクライバーを持つノードである。トピック/countupを通じて受け取ったメッセージを足し合わせていき出力する。足し合わせた合計値が素数であれば、素数であると表示する。さらに受け取ったメッセージの値が素数であるときも、素数であると表示する。
+* サブスクライバーを持つノードである。
+* トピック/countupを通じて受け取ったメッセージを足し合わせていき出力する。
+* 足し合わせた合計値が素数であれば、素数であると表示する。さらに受け取ったメッセージの値が素数であるときも、素数であると表示する。
+
+### 実行方法
+
+端末１でtalker1を実行し、端末２で以下のようにlistener1を実行する
+
+```bash
+$ ros2 run mypkg listener1
+```
+
+### 実行結果
+
+```bash
+
+```
 
 ## listener2
-サブスクライバーを持つノードである。実行してからの経過時間を10秒刻みで表示する。
+* サブスクライバーを持つノードである。
+* 実行してからの経過時間を10秒刻みで表示する。
+
+### 実行方法
+
+端末１でtalker1を実行し、端末２で以下のようにlistener2を実行する
+
+```bash
+$ ros2 run mypkg listener2
+```
+
+### 実行結果
+
+```bash
+
+```
 
 ## listener3
-サブスクライバーを持つノードである。STARTとFINISHを表示させる。このコードを実行している間に大谷選手はどれだけ稼げて、自分はどれくらいしか稼げないかを計算し出力する。
+* サブスクライバーを持つノードである。
+* STARTとFINISHを表示させる。
+* このコードを実行している間に大谷選手はどれだけ稼げて、自分はどれくらいしか稼げないかを計算し出力する。
+
+### 実行方法
+
+端末１でtalker1を実行し、端末２で以下のようにlistener3を実行する
+
+```bash
+$ ros2 run mypkg listener3
+```
+
+### 実行結果
+
+```bash
+
+```
 
 # ローンチ
 
-# 必要なソフトウェア
-ROS2
+## talkerとlistener
+talkerとlistenerの２つのノードを１つの端末で同時に実行する
 
-Python
+
+## talker1とlistener1, listener2, listener3
+talker1とlistener1, listener2, listener3の４つのノードを１つの端末で同時に実行する
+
+
+# 必要なソフトウェア
+* ROS2
+* Python
 
 # テスト環境
 Ubuntu 22.04.2 LTS
 
 # ライセンス
-このソフトウェアパッケージは、3条項BSDライセンスの下、再配布および使用が許可されます。
-このパッケージのコードの一部は、Ryuichi Ueda氏の以下のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）を参考に、本人の許可を得て改変し自身の著作としたものです
-	* [ryuichiueda/my_slides/robosys_2022](https://github.com/ryuichiueda/my_slides/tree/master/robosys_2022)
+* このソフトウェアパッケージは、3条項BSDライセンスの下、再配布および使用が許可されます。
+* このパッケージのコードの一部は、Ryuichi Ueda氏の以下のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）を参考に、本人の許可を得て改変し自身の著作としたものです
+ * [ryuichiueda/my_slides/robosys_2022](https://github.com/ryuichiueda/my_slides/tree/master/robosys_2022)
 * © 2023 Shuhei Yanagihori
