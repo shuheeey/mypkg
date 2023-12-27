@@ -58,6 +58,9 @@ $ ros2 run mypkg listener
 [INFO] [1703677808.717276717] [listener]: Listen: 8
 [INFO] [1703677809.217362977] [listener]: Listen: 9
 [INFO] [1703677809.717622603] [listener]: Listen: 10
+　　　　　　　　　　・
+　　　　　　　　　　・
+　　　　　　　　　　・
 ```
 
 ## talker1
@@ -110,6 +113,9 @@ $ ros2 run mypkg listener1
 [INFO] [1703679920.899050820] [listener1]: ↑素数足された( + 7 )↑
 [INFO] [1703679921.398600429] [listener1]: Sum: 36
 [INFO] [1703679921.898445226] [listener1]: Sum: 45
+　　　　　　　　　　・
+　　　　　　　　　　・
+　　　　　　　　　　・
 ```
 
 ## listener2
@@ -130,6 +136,9 @@ $ ros2 run mypkg listener2
 [INFO] [1703680026.954877237] [listener2]: --- Count every 10 sec ---
 [INFO] [1703680036.931830746] [listener2]: ----- 10 sec elapsed -----
 [INFO] [1703680046.931883270] [listener2]: ----- 20 sec elapsed -----
+　　　　　　　　　　　・
+　　　　　　　　　　　・
+　　　　　　　　　　　・
 ```
 
 ## listener3
@@ -188,6 +197,9 @@ $ ros2 launch mypkg talk_listen.launch.py
 [listener-2] [INFO] [1703714000.035771971] [listener]: Listen: 8
 [listener-2] [INFO] [1703714000.535930382] [listener]: Listen: 9
 [listener-2] [INFO] [1703714001.035772008] [listener]: Listen: 10
+　　　　　　　　　　・
+　　　　　　　　　　・
+　　　　　　　　　　・
 ```
 
 ## talker1とlistener1, listener2, listener3
@@ -216,28 +228,18 @@ $ ros2 launch mypkg talk_lis3.launch.py
 [listener1-2] [INFO] [1703714078.759737566] [listener1]: Sum: 10
 [listener1-2] [INFO] [1703714079.260006319] [listener1]: Sum: 15
 [listener1-2] [INFO] [1703714079.260639420] [listener1]: ↑素数足された( + 5 )↑
-[listener1-2] [INFO] [1703714079.759328199] [listener1]: Sum: 21
-[listener1-2] [INFO] [1703714080.259697455] [listener1]: Sum: 28
-[listener1-2] [INFO] [1703714080.260254451] [listener1]: ↑素数足された( + 7 )↑
-[listener1-2] [INFO] [1703714080.759495667] [listener1]: Sum: 36
-[listener1-2] [INFO] [1703714081.259416879] [listener1]: Sum: 45
-[listener1-2] [INFO] [1703714081.759380702] [listener1]: Sum: 55
-[listener1-2] [INFO] [1703714082.259694833] [listener1]: Sum: 66
-[listener1-2] [INFO] [1703714082.260313876] [listener1]: ↑素数足された( + 11 )↑
-[listener1-2] [INFO] [1703714082.759311170] [listener1]: Sum: 78
-[listener1-2] [INFO] [1703714083.259827899] [listener1]: Sum: 91
-[listener1-2] [INFO] [1703714083.260425787] [listener1]: ↑素数足された( + 13 )↑
-[listener1-2] [INFO] [1703714083.759764879] [listener1]: Sum: 105
-[listener1-2] [INFO] [1703714084.259464418] [listener1]: Sum: 120
-[listener1-2] [INFO] [1703714084.759364215] [listener1]: Sum: 136
-[listener1-2] [INFO] [1703714085.259721390] [listener1]: Sum: 153
-[listener1-2] [INFO] [1703714085.260308436] [listener1]: ↑素数足された( + 17 )↑
+　　　　　　　　　　・
+　　　　　　　　　　・
+　　　　　　　　　　・
 [listener1-2] [INFO] [1703714085.759205908] [listener1]: Sum: 171
 [listener1-2] [INFO] [1703714086.259434737] [listener1]: Sum: 190
 [listener1-2] [INFO] [1703714086.259841132] [listener1]: ↑素数足された( + 19 )↑
 [listener3-4] [INFO] [1703714086.759594852] [listener3]: 10秒　　　大谷: 65670 円   俺: 3 円   まじか
 [listener2-3] [INFO] [1703714086.759594223] [listener2]: ----- 10 sec elapsed -----
 [listener1-2] [INFO] [1703714086.759694229] [listener1]: Sum: 210
+　　　　　　　　　　・
+　　　　　　　　　　・
+　　　　　　　　　　・
 ```
 
 # 必要なソフトウェア
