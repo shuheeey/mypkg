@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 import os
 from glob import glob
 package_name = 'mypkg'
-
+i
 setup(
     name=package_name,
     version='0.0.0',
