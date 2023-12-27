@@ -214,6 +214,12 @@ $ ros2 launch mypkg talk_lis3.launch.py
 ### 実行結果
 
 ```bash
+[INFO] [launch]: All log files can be found below /home/shu1516/.ros/log/2023-12-28-06-54-35-877372-shuheiiiii-440
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [talker1-1]: process started with pid [441]
+[INFO] [listener1-2]: process started with pid [443]
+[INFO] [listener2-3]: process started with pid [445]
+[INFO] [listener3-4]: process started with pid [447]
 [listener3-4] [INFO] [1703714076.766969655] [listener3]:      S T A R T
 [listener3-4] [INFO] [1703714076.767345571] [listener3]: 大谷の給料と俺の給料計算
 [talker1-1] [INFO] [1703714076.773734615] [talker]: 送信中
