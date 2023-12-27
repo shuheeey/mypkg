@@ -171,7 +171,7 @@ $ ros2 run mypkg listener3
 # ローンチ
 
 ## talkerとlistener
-* talkerとlistenerの２つのノードを１つの端末で同時に実行する
+talkerとlistenerの２つのノードを１つの端末で同時に実行する
 
 ### 実行方法
 
@@ -203,7 +203,7 @@ $ ros2 launch mypkg talk_listen.launch.py
 ```
 
 ## talker1とlistener1, listener2, listener3
-* talker1とlistener1, listener2, listener3の４つのノードを１つの端末で同時に実行する
+talker1とlistener1, listener2, listener3の４つのノードを１つの端末で同時に実行する
 
 ### 実行方法
 
