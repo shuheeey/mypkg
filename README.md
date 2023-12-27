@@ -240,6 +240,13 @@ $ ros2 launch mypkg talk_lis3.launch.py
 　　　　　　　　　　・
 　　　　　　　　　　・
 　　　　　　　　　　・
+[listener1-2] [INFO] [1703715046.329797836] [listener1]: Sum: 7021
+[listener1-2] [INFO] [1703715046.829873343] [listener1]: Sum: 7140
+[talker1-1] [INFO] [1703715047.329842929] [talker]: 終了
+[listener3-4] [INFO] [1703715047.330140777] [listener3]: 60秒　　　大谷: 394020 円   俺: 18 円   まじか
+[listener2-3] [INFO] [1703715047.330147531] [listener2]: ----- 60 sec elapsed -----
+[listener1-2] [INFO] [1703715047.330226724] [listener1]: Sum: 7260
+[listener3-4] [INFO] [1703715047.330857351] [listener3]:     F I N I S H
 ```
 
 # 必要なソフトウェア
