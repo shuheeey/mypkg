@@ -196,12 +196,8 @@ $ ros2 launch mypkg talk_lis3.launch.py
 　　　　　　　　　　・
 　　　　　　　　　　・
 　　　　　　　　　　・
-[listener1-2] [INFO] [1703714085.759205908] [listener1]: Sum: 171
-[listener1-2] [INFO] [1703714086.259434737] [listener1]: Sum: 190
-[listener1-2] [INFO] [1703714086.259841132] [listener1]: ↑素数足された( + 19 )↑
 [listener3-4] [INFO] [1703714086.759594852] [listener3]: 10秒　　　大谷: 65670 円   俺: 3 円   まじか
 [listener2-3] [INFO] [1703714086.759594223] [listener2]: ----- 10 sec elapsed -----
-[listener1-2] [INFO] [1703714086.759694229] [listener1]: Sum: 210
 　　　　　　　　　　・
 　　　　　　　　　　・
 　　　　　　　　　　・
