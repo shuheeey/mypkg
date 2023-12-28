@@ -25,7 +25,7 @@ git clone https://github.com/shuheeey/mypkg.git
 
 ## talker
 
-### 実行
+### 実行例
 
 ```bash
 $ ros2 run mypkg talker
@@ -35,7 +35,7 @@ $ ros2 run mypkg talker
 ## listener
 * トピック/countupを通じてメッセージを受け取り、そのまま出力する
 
-### 実行
+### 実行例
 
 端末１でtalkerを動かし、端末２で以下のようにlistenerを動かす
 
@@ -55,7 +55,7 @@ $ ros2 run mypkg listener
 ## talker1
 * 60秒間メッセージを送信する。メッセージを送っている間は"送信中"と表示され、60秒たったら"終了"と表示される
 
-### 実行
+### 実行例
 
 ```bash
 $ ros2 run mypkg talker1
@@ -65,8 +65,9 @@ $ ros2 run mypkg talker1
 
 ## listener1
 * トピック/countupを通じて受け取ったメッセージを足し合わせていき出力する
-* 受け取ったメッセージや、足し合わせた合計値が素数であれば、素数であると表示する
-### 実行
+* 受け取ったメッセージや足し合わせた合計値が素数であれば、素数であると表示する
+
+### 実行例
 
 端末１でtalker1を実行し、端末２で以下のようにlistener1を実行する
 
@@ -90,7 +91,7 @@ $ ros2 run mypkg listener1
 ## listener2
 * 実行してからの経過時間を10秒刻みで表示する
 
-### 実行
+### 実行例
 
 端末１でtalker1を実行し、端末２で以下のようにlistener2を実行する
 
@@ -108,7 +109,7 @@ $ ros2 run mypkg listener2
 * STARTとFINISHを表示させる
 * このコードを実行している間に大谷選手はどれだけ稼げて、自分はどれくらいしか稼げないかを計算し10秒毎に出力する
 
-### 実行
+### 実行例
 
 端末１でtalker1を実行し、端末２で以下のようにlistener3を実行する
 
@@ -130,7 +131,7 @@ $ ros2 run mypkg listener3
 ## talkerとlistener
 talkerとlistenerの２つのノードを１つの端末で同時に実行する
 
-### 実行
+### 実行例
 
 ```bash
 $ ros2 launch mypkg talk_listen.launch.py
@@ -152,7 +153,7 @@ $ ros2 launch mypkg talk_listen.launch.py
 ## talker1とlistener1, listener2, listener3
 talker1とlistener1, listener2, listener3の４つのノードを１つの端末で同時に実行する
 
-### 実行
+### 実行例
 
 ```bash
 $ ros2 launch mypkg talk_lis3.launch.py
