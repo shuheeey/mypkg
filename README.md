@@ -13,6 +13,8 @@ git clone https://github.com/shuheeey/mypkg.git
 ```
 
 # ノード
+talker類: パブリッシャーを持つ
+listener類: サブスクライバーを持つ
 
 ## トピックの説明
 
@@ -21,7 +23,6 @@ git clone https://github.com/shuheeey/mypkg.git
 * talkerとtalker1はこのトピックをメッセージとして送信する
 
 ## talker
-* パブリッシャーを持つノードである
 * メッセージの型はInt16
 
 ### 実行
@@ -32,7 +33,6 @@ $ ros2 run mypkg talker
 ```
 
 ## listener
-* サブスクライバーを持つノードである
 * トピック/countupを通じてメッセージを受け取り、そのまま出力する
 
 ### 実行
