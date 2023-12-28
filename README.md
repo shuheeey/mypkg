@@ -1,12 +1,12 @@
 # mypkg
 ロボットシステム学の課題２
 
-このリポジトリはROS2のパッケージである
+このリポジトリはROS 2のパッケージである
 
 [![test](https://github.com/shuheeey/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/shuheeey/mypkg/actions/workflows/test.yml)[![test](https://github.com/shuheeey/mypkg/actions/workflows/test1.yml/badge.svg)](https://github.com/shuheeey/mypkg/actions/workflows/test1.yml)
 
 # インストール方法
-ROS2を動かすことのできる環境でこのリポジトリをクローンする
+ROS 2を動かすことのできる環境でこのリポジトリをクローンする
 
 ```bash
 git clone https://github.com/shuheeey/mypkg.git
@@ -258,7 +258,7 @@ $ ros2 launch mypkg talk_lis3.launch.py
 ```
 
 # 必要なソフトウェア
-* ROS2 humble
+* ROS 2 humble
 * Python
 
 # テスト環境
