@@ -22,15 +22,10 @@ git clone https://github.com/shuheeey/mypkg.git
 * トピック/countupを通じてメッセージを送信する
 * メッセージの型はInt16
 
-### 実行方法
+### 実行
 
 ```bash
 $ ros2 run mypkg talker
-```
-
-### 実行結果
-
-```bash
 (何も表示されない)
 ```
 
@@ -38,17 +33,12 @@ $ ros2 run mypkg talker
 * サブスクライバーを持つノードである
 * トピック/countupを通じてメッセージを受け取り、そのまま出力する
 
-### 実行方法
+### 実行
 
 端末１でtalkerを動かし、端末２で以下のようにlistenerを動かす
 
 ```bash
 $ ros2 run mypkg listener
-```
-
-### 実行結果
-
-```bash
 [INFO] [1703677804.729422151] [listener]: Listen: 0
 [INFO] [1703677805.217397200] [listener]: Listen: 1
 [INFO] [1703677805.717381445] [listener]: Listen: 2
@@ -71,15 +61,10 @@ $ ros2 run mypkg listener
 * メッセージの型はInt16
 * 60秒間メッセージを送信する。メッセージを送っている間は"送信中"と表示され、60秒たったら"終了"と表示される
 
-### 実行方法
+### 実行
 
 ```bash
 $ ros2 run mypkg talker1
-```
-
-### 実行結果
-
-```bash
 [INFO] [1703679691.818587400] [talker]: 送信中
 [INFO] [1703679751.801373876] [talker]: 終了
 ```
@@ -93,13 +78,10 @@ $ ros2 run mypkg talker1
 
 端末１でtalker1を実行し、端末２で以下のようにlistener1を実行する
 
+### 実行
+
 ```bash
 $ ros2 run mypkg listener1
-```
-
-### 実行結果
-
-```bash
 [INFO] [1703679917.424498029] [listener1]: Sum: 0
 [INFO] [1703679917.898573708] [listener1]: Sum: 1
 [INFO] [1703679918.398510504] [listener1]: Sum: 3
@@ -124,17 +106,12 @@ $ ros2 run mypkg listener1
 * サブスクライバーを持つノードである
 * 実行してからの経過時間を10秒刻みで表示する
 
-### 実行方法
+### 実行
 
 端末１でtalker1を実行し、端末２で以下のようにlistener2を実行する
 
 ```bash
 $ ros2 run mypkg listener2
-```
-
-### 実行結果
-
-```bash
 [INFO] [1703680026.954877237] [listener2]: --- Count every 10 sec ---
 [INFO] [1703680036.931830746] [listener2]: ----- 10 sec elapsed -----
 [INFO] [1703680046.931883270] [listener2]: ----- 20 sec elapsed -----
@@ -148,17 +125,12 @@ $ ros2 run mypkg listener2
 * STARTとFINISHを表示させる
 * このコードを実行している間に大谷選手はどれだけ稼げて、自分はどれくらいしか稼げないかを計算し10秒毎に出力する
 
-### 実行方法
+### 実行
 
 端末１でtalker1を実行し、端末２で以下のようにlistener3を実行する
 
 ```bash
 $ ros2 run mypkg listener3
-```
-
-### 実行結果
-
-```bash
 [INFO] [1703680064.504544742] [listener3]:      S T A R T
 [INFO] [1703680064.505113591] [listener3]: 大谷の給料と俺の給料計算
 [INFO] [1703680074.490251661] [listener3]: 10秒　　　大谷: 65670 円   俺: 3 円   まじか
@@ -175,15 +147,10 @@ $ ros2 run mypkg listener3
 ## talkerとlistener
 talkerとlistenerの２つのノードを１つの端末で同時に実行する
 
-### 実行方法
-
-```bash
-$ ros2 launch mypkg talk_listen.launch.py
-```
-
 ### 実行結果
 
 ```bash
+$ ros2 launch mypkg talk_listen.launch.py
 [INFO] [launch]: All log files can be found below /home/shu1516/.ros/log/2023-12-28-06-53-15-083173-shuheiiiii-121
 [INFO] [launch]: Default logging verbosity is set to INFO
 [INFO] [talker-1]: process started with pid [122]
@@ -207,15 +174,10 @@ $ ros2 launch mypkg talk_listen.launch.py
 ## talker1とlistener1, listener2, listener3
 talker1とlistener1, listener2, listener3の４つのノードを１つの端末で同時に実行する
 
-### 実行方法
-
-```bash
-$ ros2 launch mypkg talk_lis3.launch.py
-```
-
 ### 実行結果
 
 ```bash
+$ ros2 launch mypkg talk_lis3.launch.py
 [INFO] [launch]: All log files can be found below /home/shu1516/.ros/log/2023-12-28-06-54-35-877372-shuheiiiii-440
 [INFO] [launch]: Default logging verbosity is set to INFO
 [INFO] [talker1-1]: process started with pid [441]
