@@ -45,11 +45,6 @@ $ ros2 run mypkg listener
 [INFO] [1703677806.217560241] [listener]: Listen: 3
 [INFO] [1703677806.717461928] [listener]: Listen: 4
 [INFO] [1703677807.217671900] [listener]: Listen: 5
-[INFO] [1703677807.717565586] [listener]: Listen: 6
-[INFO] [1703677808.217695207] [listener]: Listen: 7
-[INFO] [1703677808.717276717] [listener]: Listen: 8
-[INFO] [1703677809.217362977] [listener]: Listen: 9
-[INFO] [1703677809.717622603] [listener]: Listen: 10
 　　　　　　　　　　・
 　　　　　　　　　　・
 　　　　　　　　　　・
@@ -90,11 +85,6 @@ $ ros2 run mypkg listener1
 [INFO] [1703679919.398611812] [listener1]: Sum: 10
 [INFO] [1703679919.898559765] [listener1]: Sum: 15
 [INFO] [1703679919.899075852] [listener1]: ↑素数足された( + 5 )↑
-[INFO] [1703679920.398651512] [listener1]: Sum: 21
-[INFO] [1703679920.898517571] [listener1]: Sum: 28
-[INFO] [1703679920.899050820] [listener1]: ↑素数足された( + 7 )↑
-[INFO] [1703679921.398600429] [listener1]: Sum: 36
-[INFO] [1703679921.898445226] [listener1]: Sum: 45
 　　　　　　　　　　・
 　　　　　　　　　　・
 　　　　　　　　　　・
@@ -159,11 +149,6 @@ $ ros2 launch mypkg talk_listen.launch.py
 [listener-2] [INFO] [1703713997.535766922] [listener]: Listen: 3
 [listener-2] [INFO] [1703713998.035836956] [listener]: Listen: 4
 [listener-2] [INFO] [1703713998.535762056] [listener]: Listen: 5
-[listener-2] [INFO] [1703713999.035739789] [listener]: Listen: 6
-[listener-2] [INFO] [1703713999.535845518] [listener]: Listen: 7
-[listener-2] [INFO] [1703714000.035771971] [listener]: Listen: 8
-[listener-2] [INFO] [1703714000.535930382] [listener]: Listen: 9
-[listener-2] [INFO] [1703714001.035772008] [listener]: Listen: 10
 　　　　　　　　　　・
 　　　　　　　　　　・
 　　　　　　　　　　・
