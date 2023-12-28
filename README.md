@@ -13,8 +13,8 @@ git clone https://github.com/shuheeey/mypkg.git
 ```
 
 # ノード
-talker類: パブリッシャーを持つ
-listener類: サブスクライバーを持つ
+* talker類: パブリッシャーを持つ
+* listener類: サブスクライバーを持つ
 
 ## トピックの説明
 
