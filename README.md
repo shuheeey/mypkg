@@ -15,6 +15,7 @@ git clone https://github.com/shuheeey/mypkg.git
 # ノード
 * talker類: パブリッシャーを持つ
 * listener類: サブスクライバーを持つ
+* メッセージの型はInt16
 
 ## トピックの説明
 
@@ -23,7 +24,6 @@ git clone https://github.com/shuheeey/mypkg.git
 * talkerとtalker1はこのトピックをメッセージとして送信する
 
 ## talker
-* メッセージの型はInt16
 
 ### 実行
 
@@ -53,8 +53,6 @@ $ ros2 run mypkg listener
 ```
 
 ## talker1
-* パブリッシャーをもつノードである
-* メッセージの型はInt16
 * 60秒間メッセージを送信する。メッセージを送っている間は"送信中"と表示され、60秒たったら"終了"と表示される
 
 ### 実行
@@ -66,7 +64,6 @@ $ ros2 run mypkg talker1
 ```
 
 ## listener1
-* サブスクライバーを持つノードである
 * トピック/countupを通じて受け取ったメッセージを足し合わせていき出力する
 * 受け取ったメッセージや、足し合わせた合計値が素数であれば、素数であると表示する
 ### 実行
@@ -91,7 +88,6 @@ $ ros2 run mypkg listener1
 ```
 
 ## listener2
-* サブスクライバーを持つノードである
 * 実行してからの経過時間を10秒刻みで表示する
 
 ### 実行
@@ -109,7 +105,6 @@ $ ros2 run mypkg listener2
 ```
 
 ## listener3
-* サブスクライバーを持つノードである
 * STARTとFINISHを表示させる
 * このコードを実行している間に大谷選手はどれだけ稼げて、自分はどれくらいしか稼げないかを計算し10秒毎に出力する
 
