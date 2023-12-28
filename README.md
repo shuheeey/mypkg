@@ -74,11 +74,9 @@ $ ros2 run mypkg talker1
 * トピック/countupを通じて受け取ったメッセージを足し合わせていき出力する
 * 足し合わせた合計値が素数であれば、素数であると表示する。さらに受け取ったメッセージの値が素数であるときも、素数であると表示する
 
-### 実行方法
+### 実行
 
 端末１でtalker1を実行し、端末２で以下のようにlistener1を実行する
-
-### 実行
 
 ```bash
 $ ros2 run mypkg listener1
@@ -147,7 +145,7 @@ $ ros2 run mypkg listener3
 ## talkerとlistener
 talkerとlistenerの２つのノードを１つの端末で同時に実行する
 
-### 実行結果
+### 実行
 
 ```bash
 $ ros2 launch mypkg talk_listen.launch.py
@@ -174,7 +172,7 @@ $ ros2 launch mypkg talk_listen.launch.py
 ## talker1とlistener1, listener2, listener3
 talker1とlistener1, listener2, listener3の４つのノードを１つの端末で同時に実行する
 
-### 実行結果
+### 実行
 
 ```bash
 $ ros2 launch mypkg talk_lis3.launch.py
@@ -195,9 +193,6 @@ $ ros2 launch mypkg talk_lis3.launch.py
 [listener1-2] [INFO] [1703714077.760320573] [listener1]: ↑素数足された( + 2 )↑
 [listener1-2] [INFO] [1703714078.259352920] [listener1]: Sum: 6
 [listener1-2] [INFO] [1703714078.259994852] [listener1]: ↑素数足された( + 3 )↑
-[listener1-2] [INFO] [1703714078.759737566] [listener1]: Sum: 10
-[listener1-2] [INFO] [1703714079.260006319] [listener1]: Sum: 15
-[listener1-2] [INFO] [1703714079.260639420] [listener1]: ↑素数足された( + 5 )↑
 　　　　　　　　　　・
 　　　　　　　　　　・
 　　　　　　　　　　・
