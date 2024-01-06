@@ -13,8 +13,8 @@ git clone https://github.com/shuheeey/mypkg.git
 ```
 
 # ノード
-* talker類: パブリッシャーを持つ
-* listener類: サブスクライバーを持つ
+* talker,1: パブリッシャーを持つ
+* listener,1,2,3: サブスクライバーを持つ
 * メッセージの型はInt16
 
 ## トピックの説明
